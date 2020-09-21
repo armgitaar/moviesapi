@@ -43,7 +43,6 @@ const databaseConfig: DatabaseConfig & { orm: Partial<OrmConfig> } = {
         user: Env.get('DB_USER', 'postgres') as string,
         password: Env.get('DB_PASSWORD', '') as string,
         database: Env.get('DB_NAME', 'movies') as string,
-        ssl: true
       },
       healthCheck: true,
     },
